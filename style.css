@@ -1,5 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+
+}
+
 .sectionOne {
     display: flex;
     flex-direction: column;
     width: 60px;
 }
+
+.navbarLeft {
+    background-color: #071ca1 ;
+    margin: 20px 0;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left:25px;
+}
+
+li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    padding: 20px 10px;
+    object-fit: contain;
+}
+
+
