@@ -7,7 +7,6 @@
 .main {
     display: flex;
     height: 100vh;
-
 }
 
 .sectionOne {
@@ -66,4 +65,10 @@ ul {
 .logoLogin:hover {
     cursor: pointer;
     transform: scale(1.5);
+}
+
+/** CONTENT **/ 
+
+.content {
+    width: 80%; 
 }
