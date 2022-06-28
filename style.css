@@ -17,6 +17,10 @@
     font-size: 20px;
 }
 
+.navbar-wrapper {
+    width: 20%;
+}
+
 .navbarLeft {
     background-color: #071ca1 ;
     margin: 20px 0;
@@ -25,6 +29,10 @@
     flex-direction: column;
     justify-content: space-between;
     padding-left:25px;
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 li a {
