@@ -1,4 +1,10 @@
 setURL('http://developerakademie.com/smallest_backend_ever-master');
+let users = []; 
+
+async function initBackend() {
+    await downloadFromServer();
+    users = JSON.parse(backend.getItem('users')) || [];
+}
 
 async function init() {
     await includeHTML();

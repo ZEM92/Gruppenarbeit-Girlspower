@@ -80,3 +80,24 @@ ul {
 .content {
     width: 80%; 
 }
+
+/** BOARD **/
+
+.board-wrapper {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.grey-container {
+    background-color: rgb(244 243 251);
+    width: 170px; 
+    height: 550px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.column {
+    padding-top: 30px;
+}
