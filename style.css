@@ -141,7 +141,7 @@ h2 {
 
 input , select  {
     height: 40px;
-    width: 145px;
+    width: 260px;
 }
 
 .firstRow {
@@ -149,8 +149,8 @@ input , select  {
 }
 
 .assignedTo {
-    height: 50px;
-    width: 50px; 
+    height: 53px;
+    width: 53px; 
     border-radius: 100%;
     object-fit: cover; 
 }
