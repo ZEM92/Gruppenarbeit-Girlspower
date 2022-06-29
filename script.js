@@ -5,8 +5,6 @@ function addUser() {
     backend.setItem('users', JSON.stringify(users));
 }
 
-
-
 //* TEMPLATE  */
 async function init() {
     await includeHTML();
