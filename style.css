@@ -147,3 +147,37 @@ input , select  {
 .firstRow {
     margin-top: 20px;
 }
+
+.assignedTo {
+    height: 50px;
+    width: 50px; 
+    border-radius: 100%;
+    object-fit: cover; 
+}
+
+.plus-btn {
+    width: 30px;
+    height: 30px;
+}
+
+.assignedToRow {
+    display: flex;
+    align-items: center;
+}
+
+.assignedToRow2 {
+    display: flex; 
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.createTask {
+    background-color: rgb(30 49 144);
+    color: white; 
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+}
