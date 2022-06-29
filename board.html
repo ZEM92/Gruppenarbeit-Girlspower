@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,11 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="./mini_backend.js"></script>
+
 </head>
+
+
+
 <body onload="init()">
 
     <div class="main">
@@ -20,8 +25,17 @@
             <div class="board-wrapper">
                 <div class="column">
                     <h3>TO DO</h3>
-                    <div class="grey-container"></div>
+                    <div class="grey-container">
+                        <div ondraggstart="startdragging(0)" class="todo">eine div</div>
+                        <div ondraggstart="startdragging(0)" class="todo">eine andere div</div>
+                    </div>
+
                 </div>
+
+
+
+
+
                 <div class="column">
                     <h3>IN PROGRESS</h3>
                     <div class="grey-container"></div>
@@ -39,6 +53,7 @@
 
     </div>
 
-    
+
 </body>
+
 </html>
