@@ -7,6 +7,7 @@
     <title>Document</title>
     <script language="javascript" type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript" src="addTask.js"></script>
 </head>
 <body onload="init()">
 
@@ -22,19 +23,19 @@
                 <div class="firstRow flex">
                     <div class="width50 marginLeft">
                         <h4 class="blueText">TITLE</h4>
-                        <input>
+                        <input id="title" placeholder="Title">
                     </div>
  
                     <div class="width50">
                         <h4 class="blueText">DUE DATE</h4>
-                        <input type="date">
+                        <input type="date" id="dueDate">
                     </div>
                 </div>
 
                 <div class="secondRow flex">
                     <div class="width50 marginLeft">
                         <h4 class="blueText">CATEGORY</h4>
-                        <select>
+                        <select id="category">
                             <option>Management</option>
                             <option>Marketing</option>
                             <option>Product</option>
@@ -43,8 +44,10 @@
                     </div>
                     <div class="width50">
                         <h4 class="blueText">URGENCY</h4>
-                        <select>
+                        <select id="urgency">
                             <option>High</option>
+                            <option value="">Medium</option>
+                            <option value="">Low</option>
                         </select>
                     </div>
                 </div>
@@ -52,7 +55,7 @@
                 <div class="thirdRow flex">
                     <div class="width50 marginLeft">
                         <h4 class="blueText">DESCRIPTION</h4>
-                        <textarea>Describe your task..
+                        <textarea id="text">Describe your task..
                         </textarea>
                     </div>
                     <div class="width50">
@@ -64,8 +67,8 @@
 
 
                         <div class="assignedToRow2">
-                            <span class="blueText">CANCEL</span>
-                            <button class="createTask">CREATE TASK</button>
+                            <span class="blueText" onclick="cancel()">CANCEL</span>
+                            <button class="createTask" onclick="addTask()">CREATE TASK</button>
                         </div>
 
                     </div>
