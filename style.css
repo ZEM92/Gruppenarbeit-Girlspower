@@ -24,7 +24,7 @@
 .navbarLeft {
     background-color: #071ca1 ;
     margin: 20px 0;
-    width: 100px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,4 +100,25 @@ h3 {
 
 .column {
     padding-top: 30px;
+}
+
+/* Add Task Style ---------------------*/
+
+h2 {
+    font-weight: 600px;
+    margin-top: 50px;
+    padding-bottom: 8px;
+}
+
+.blueText {
+    color:#071ca1;
+}
+
+.addTaskBox {
+    height: 75%;
+    width: 95%;
+    background-color: rgb(244,243,251);
+    margin-top: 30px ;
+    border-radius: 3%;
+
 }
