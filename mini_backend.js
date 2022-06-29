@@ -1,7 +1,7 @@
 let jsonFromServer = {};
 let BASE_SERVER_URL;
 
-setURL('http://iris-bode.developerakademie.net/smallest_backend_ever-master');
+setURL('https://iris-bode.developerakademie.net/smallest_backend_ever-master');
 
 const backend = {
     setItem: function(key, item) {
