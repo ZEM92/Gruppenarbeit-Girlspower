@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +7,7 @@
     <title>Document</title>
     <script language="javascript" type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="./mini_backend.js"></script>
-    <link rel="icon" type="image/x-icon" href="img/graph.png">
 </head>
-
-
-
 <body onload="init()">
 
     <div class="main">
@@ -21,38 +15,69 @@
         <div w3-include-html="navbar.html" class="navbar-wrapper"></div>
 
         <div class="content">
-            <div class="board-wrapper">
-                <div class="column">
-                    <h3>TO DO</h3>
-                    <div class="grey-container">
-                        <div ondraggstart="startdragging(0)" class="todo">eine div</div>
-                        <div ondraggstart="startdragging(0)" class="todo">eine andere div</div>
+            <h2>Add Task</h2>
+            <span class="blueText">Learning Management System Project</span>
+
+            <div class="addTaskBox">
+                <div class="firstRow flex">
+                    <div class="width50 marginLeft">
+                        <h4 class="blueText">TITLE</h4>
+                        <input>
                     </div>
+ 
+                    <div class="width50">
+                        <h4 class="blueText">DUE DATE</h4>
+                        <input type="date">
+                    </div>
+                </div>
 
+                <div class="secondRow flex">
+                    <div class="width50 marginLeft">
+                        <h4 class="blueText">CATEGORY</h4>
+                        <select>
+                            <option>Management</option>
+                        </select>
+                    </div>
+                    <div class="width50">
+                        <h4 class="blueText">URGENCY</h4>
+                        <select>
+                            <option>High</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="thirdRow flex">
+                    <div class="width50 marginLeft">
+                        <h4 class="blueText">DESCRIPTION</h4>
+                        <textarea>
+                            Ladida..........
+                        </textarea>
+                    </div>
+                    <div class="width50">
+                        <h4 class="blueText">ASSIGNED TO</h4>
+                        <div>
+                            <img src="img/joinlogo.png">
+                            <img src="img/icon plus.png">
+                        </div>
+
+
+                        <div>
+                            <span class="blueText">CANCEL</span>
+                            <button>CREATE TASK</button>
+                        </div>
+
+                    </div>
                 </div>
 
 
-
-
-
-                <div class="column">
-                    <h3>IN PROGRESS</h3>
-                    <div class="grey-container"></div>
-                </div>
-                <div class="column">
-                    <h3>TESTING</h3>
-                    <div class="grey-container"></div>
-                </div>
-                <div class="column">
-                    <h3>DONE</h3>
-                    <div class="grey-container"></div>
-                </div>
             </div>
+
         </div>
 
     </div>
 
+    
 
+    
 </body>
-
 </html>

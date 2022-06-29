@@ -120,5 +120,30 @@ h2 {
     background-color: rgb(244,243,251);
     margin-top: 30px ;
     border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.width50 {
+    width: 50%;
+    height: 150px;
+}
+
+.marginLeft {
+    margin-left: 45px;
+}
+
+input , select  {
+    height: 40px;
+    width: 145px;
+}
+
+.firstRow {
+    margin-top: 20px;
 }
