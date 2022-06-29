@@ -17,5 +17,4 @@ function cancel() {
    document.getElementById('category').value = ``;
    document.getElementById('urgency').value = ``;
    document.getElementById('text').value = ``; 
-
 }
