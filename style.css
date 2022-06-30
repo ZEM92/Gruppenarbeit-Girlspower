@@ -209,3 +209,53 @@ textarea {
 
 
 
+/** LOGIN **/ 
+
+.wrapper-login {
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;    
+}
+
+.login-box {
+    background-color: rgba(30 , 49 , 144 , 0.9);
+    width: 40%;
+    height: 40%;
+    border-radius: 20px;
+    padding-left: 30px;
+    color: white;
+    padding-top: 40px;  
+}
+
+.input-login {
+    background-color: rgba(30 , 49 , 144 , 0.9);
+    width: 100px !important;   
+    border: none;
+    height: 30px;
+    border-radius: 7px; 
+    padding-left: 8px;
+}
+
+.login-btn {
+    color: white;
+    height: 30px;
+    background-color: rgba(30 , 49 , 144 , 0.9);
+    border: 1px solid white;
+    border-radius: 17px;
+    width: 60px;
+    margin-bottom: 20px; 
+   
+}
+
+.login-row {
+    padding: 20px 0; 
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.test-login {
+    font-size: 0.8rem;
+}
