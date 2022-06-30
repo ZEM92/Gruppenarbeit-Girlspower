@@ -1,9 +1,3 @@
-let users = []; 
-
-function addUser() {
-    users.push('John');
-    backend.setItem('users', JSON.stringify(users));
-}
 
 //* TEMPLATE  */
 async function init() {
