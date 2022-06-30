@@ -192,3 +192,14 @@ textarea {
     border-radius: 8px;
     border: none;
 }
+
+.cancelbutton {
+    width: 30px;
+    height: 30px;
+}
+.cancelbutton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+    
+}
