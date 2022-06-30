@@ -23,7 +23,7 @@
 
 .navbarLeft {
     background-color: #071ca1 ;
-    margin: 20px 0;
+   
     width: 120px;
     display: flex;
     flex-direction: column;
@@ -38,6 +38,7 @@
 li a {
     color: rgb(214, 213, 213);
     text-decoration: none;
+
 }
 
 li {
@@ -47,7 +48,9 @@ li {
 
 li:hover {
     cursor: pointer;
-    border-left: 5px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+  text-decoration: whitesmoke;
+   transition: all 125ms ease-in-out;
 }
 
 
@@ -291,6 +294,7 @@ justify-content: space-between;
 align-items:flex-start;
 
 
+
 }
 
 .backlogCard{
@@ -303,7 +307,7 @@ align-items:flex-start;
     border-radius: 3%;
     padding: 10px;
     margin: 8px;
-    color: rgb(24, 24, 24);
+    color: rgb(77, 76, 76);
 
 }
 
@@ -336,5 +340,24 @@ align-items:flex-start;
 .backlogCardCategor{
     display: flex;
     text-align: center;
+}
+
+
+
+/** HELP **/ 
+
+.KanbanMeaning{
+margin-top: 18px;
+margin-bottom: 18px;
+background-color:  rgb(244,243,251);
+padding: 12px;
+border-radius: 10px;
+color: rgb(77, 76, 76);
+
+}
+
+.Helph4{
+    color: #071ca1;
+    
 }
 
