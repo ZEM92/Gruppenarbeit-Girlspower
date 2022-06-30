@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script language="javascript" type="text/javascript" src="addTask.js"></script>
 </head>
+
 <body onload="init()">
 
     <div class="main">
@@ -25,7 +27,7 @@
                         <h4 class="blueText">TITLE</h4>
                         <input id="title" placeholder="Title">
                     </div>
- 
+
                     <div class="width50">
                         <h4 class="blueText">DUE DATE</h4>
                         <input type="date" id="dueDate">
@@ -51,45 +53,46 @@
                         </select>
                     </div>
                 </div>
-            </div>
-
-            <div class="bottomdiv">
-
-                <div class="thirdRow flex">
-                    <div class="width50 marginLeft">
-                        <h4 class="blueText">DESCRIPTION</h4>
-                        <textarea id="text">Describe your task..
-                        </textarea>
+                <div class="bottomdiv">
+                    <div>
+                        <div class="thirdRow flex">
+                            <div class="width50 marginLeft">
+                                <h4 class="blueText">DESCRIPTION</h4>
+                                <textarea id="text">Describe your task..
+                            </textarea>
+                            </div>
+                        </div>
+                        <div class="width50">
+                            <h4 class="blueText">ASSIGNED TO</h4>
+                            <div class="assignedToRow">
+                                <img src="Profilpicture/profilepicture1.png" class="assignedTo">
+                                <img src="img/icon plus.png" class="plus-btn">
+                            </div>
+    
+    
+                            <div class="assignedToRow2">
+    
+                                <img class=" cancelbutton" src="img/trash.png" onclick="cancel()">
+                                <button class="createTask" onclick="addTask()">CREATE TASK</button>
+                            </div>
+    
+                        </div>
                     </div>
                 </div>
-                    <div class="width50">
-                        <h4 class="blueText">ASSIGNED TO</h4>
-                        <div class="assignedToRow">
-                            <img src="Profilpicture/profilepicture1.png" class="assignedTo">
-                            <img src="img/icon plus.png" class="plus-btn">
-                        </div>
-
-
-                        <div class="assignedToRow2">
-                       
-                            <img class=" cancelbutton" src="img/trash.png" onclick="cancel()">
-                            <button class="createTask" onclick="addTask()">CREATE TASK</button>
-                        </div>
-
-                    </div>
-                </div>
             </div>
-               
 
-
-            </div>
 
         </div>
 
+
+
+
+
     </div>
 
-    
 
-    
+
+
 </body>
+
 </html>

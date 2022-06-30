@@ -155,9 +155,7 @@ textarea {
     height: 100px;
 }
 
-.firstRow {
-    margin-top: 20px;
-}
+
 
 .assignedTo {
     height: 53px;
@@ -203,3 +201,11 @@ textarea {
 
     
 }
+
+.bottomdiv {
+    display: flex;
+    gap: 4rem;
+}
+
+
+
