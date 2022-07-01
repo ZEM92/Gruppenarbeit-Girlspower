@@ -25,24 +25,38 @@
             <div class="board-wrapper">
                 <div class="column">
                     <h3>TO DO</h3>
-                    <div class="grey-container">
-                        <div ondraggstart="startdragging(0)" class="todo" ondrop="moveTo('open')" ondragover="allowDrop(event)">eine div</div>
+                    <div class="DragAndDrop">
+                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                            <div class="drop-element" id="1" draggable="true" ondragstart="drag(event)">
+                                <img class="assignedTo" src="Profilpicture/profilepicture1.png">
+                                <h1>Title</h1>
+                                <span>Category</span><br>
+                                <span>DueDate</span>
+                                <div class="drop-element" id="2" draggable="true" ondragstart="drag(event)"></div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
                 <div class="column">
                     <h3>IN PROGRESS</h3>
-                    <div class="grey-container">
-                        <div ondraggstart="startdragging(0)" class="todo" ondrop="moveTo('closed')" ondragover="allowDrop(event)">eine andere div</div>
+                    <div class="DragAndDrop">
+                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                     </div>
                 </div>
                 <div class="column">
                     <h3>TESTING</h3>
-                    <div class="grey-container"></div>
+                    <div class="DragAndDrop">
+                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
                 </div>
                 <div class="column">
                     <h3>DONE</h3>
-                    <div class="grey-container"></div>
+                    <div class="DragAndDrop">
+                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -18,57 +18,17 @@ async function includeHTML() {
 }
 
 /** DRAG & DROP  */
-let todos = [{
-
-    'id': 0,
-    'title': 'putzen',
-    'category': 'open'
-}, {
-    'id': 1,
-    'title': 'kochen',
-    'category': 'open'
-}, {
-    'id': 2,
-    'title': 'einkaufen',
-    'category': 'closed'
-}];
-
-let currentDraggedElement;
-
-function updateHTML() {
-    let open = todos.filter(t => t['category'] == 'open');
-
-    document.getElementById('open').innerHTML = '';
-
-    for (let index = 0; index < open.length; index++) {
-        const element = open[index];
-        document.getElementById('open').innerHTML += generateTodoHTML(element);
-    }
-
-    let closed = todos.filter(t => t['category'] == 'closed');
-    document.getElementById('closed').innerHTML = '';
-
-    for (let index = 0; index < closed.length; index++) {
-        const element = closed[index];
-        document.getElementById('closed').innerHTML += generateTodoHTML(element);
-    }
-}
-
-function startDragging(id) {
-
-    let currentDraggedElement = id;
-
-}
-
-function generateTodoHTML(element) {
-    return `<div draggable="true" ondraggstart="startDragging(${element['id']})" class="todo">${element['title']}</div>`;
-}
 
 function allowDrop(ev) {
     ev.preventDefault();
 }
 
-function moveTo(category) {
-    todos[currentDraggedElement]['category'] = category;
-    updateHTML();
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
 }

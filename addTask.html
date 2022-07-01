@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <script language="javascript" type="text/javascript" src="addTask.js"></script>
     <script src="./mini_backend.js"></script>
-   
+
 
 </head>
 
 <body onload="init()">
 
     <div class="main">
-    <div w3-include-html="navbar.html" class="navbar-wrapper"></div>
+        <div w3-include-html="navbar.html" class="navbar-wrapper"></div>
 
         <div class="content">
             <h2>Add Task</h2>
@@ -67,7 +67,7 @@
                     <div class="width50">
                         <h4 class="blueText">ASSIGNED TO</h4>
                         <div class="assignedToRow">
-                            <img src="Profilpicture/profilepicture1.png" class="assignedTo">
+                            <img id="addProfilePicture" src="Profilpicture/profilepicture1.png" class="assignedTo">
                             <img src="img/icon plus.png" class="plus-btn">
                         </div>
 
@@ -75,7 +75,7 @@
                         <div class="assignedToRow2">
 
                             <img class=" cancelbutton" src="img/trash.png" onclick="cancel()">
-                            <button class="createTask" onclick="addTask()">CREATE TASK</button>
+                            <button onclick="addTask" class="createTask" onclick="addTask()">CREATE TASK</button>
                         </div>
                     </div>
 
