@@ -19,13 +19,13 @@
 
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
-            if (username == "admin" && password == "user") {
-                button.disabled = false
-                return false;
+            if (username == "Gast" && password == "123") {
+                document.getElementById('disabled-btn').disabled ="disabled"
+                console.log('test')
             }
 
             else {
-
+         
 
             }
         }
@@ -51,9 +51,9 @@
                 </div>
 
                 <a href="board.html">
-                    <input type="submit" class="login-btn" name="" value="Login" onclick="validate()">
+                    <input type="submit" class="login-btn" name="" value="Login" onclick="validate()" disabled id="disabled-btn">
                 </a>
-                <p class="test-login">Testzugang: Name: Gast pw: ändi</p>
+                <p class="test-login">Testzugang: Name: Gast pw: 123</p>
 
 
 
