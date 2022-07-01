@@ -181,8 +181,9 @@ textarea {
     display: flex; 
     justify-content: flex-end;
     gap: 2rem;
-    padding-right: 20px;
+    padding-right: 70px;
     align-items: center;
+    padding-top: 10px;
 }
 
 .createTask {
