@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,41 +12,61 @@
 
     <script language="javascript" type="text/javascript" src="script.js"></script>
     <script src="./mini_backend.js"></script>
+
+    <script>
+
+        function validate() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "admin" && password == "user") {
+                button.disabled = false
+                return false;
+            }
+
+            else {
+
+
+            }
+        }
+    </script>
 </head>
 
 <body>
 
     <div>
         <img src="img/stairHouse.jpg" class="background-image">
-   
+
         <div class="wrapper-login">
 
-        <div class="login-box">
-            <div class="flex login-row">
-                <span>Login name:</span>
-                <input type="text" placeholder="enter Name" class="input-login" id="username">
+            <div class="login-box">
+                <div class="flex login-row">
+                    <span>Login name:</span>
+                    <input type="text" placeholder="enter Name" class="input-login" id="username">
+                </div>
+
+                <div class="flex login-row">
+                    <span>Password:</span>
+                    <input type="password" placeholder="enter Password" class="input-login" id="password">
+                </div>
+
+                <a href="board.html">
+                    <input type="submit" class="login-btn" name="" value="Login" onclick="validate()">
+                </a>
+                <p class="test-login">Testzugang: Name: Gast pw: ändi</p>
+
+
+
+
+
+
+
             </div>
 
-            <div class="flex login-row">
-                <span>Password:</span>
-                <input type="password" placeholder="enter Password" class="input-login" id="password">
-            </div>
-
-            <input type="submit" class="login-btn" name="" value="Login" onclick="validate()">
-
-            <p class="test-login">Testzugang: Name: Gast pw: ändi</p>
-
-
-
-            
-
-
-            
         </div>
 
-    </div>
 
 
-    
 </body>
+
 </html>
