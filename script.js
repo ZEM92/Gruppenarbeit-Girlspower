@@ -1,4 +1,3 @@
-
 //* TEMPLATE  */
 async function init() {
     await includeHTML();
@@ -63,4 +62,13 @@ function startDragging(id) {
 
 function generateTodoHTML(element) {
     return `<div draggable="true" ondraggstart="startDragging(${element['id']})" class="todo">${element['title']}</div>`;
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function moveTo(category) {
+    todos[currentDraggedElement]['category'] = category;
+    updateHTML();
 }
