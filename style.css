@@ -248,6 +248,7 @@ textarea {
     border-radius: 17px;
     width: 60px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .login-row {
