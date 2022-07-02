@@ -19,10 +19,3 @@ function cancel() {
     document.getElementById('text').value = ``;
 }
 
- function showNavMobil() {
-    document.getElementById('pop-nav').classList.remove('d-none');
-}
-
-function closePopNav() {
-    document.getElementById('pop-nav').classList.add('d-none');
-}

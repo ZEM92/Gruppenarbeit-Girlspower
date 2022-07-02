@@ -17,7 +17,17 @@
 <body onload="init()">
 
     <div class="main">
-        <div class="navbar-mobil"></div>
+        <div class="navbar-mobil">
+            <img src="img/nav.png" alt="" class="nav-icon" onclick="showNavMobil()">
+            <div id="pop-nav" class="d-none pop-nav">
+                <span onclick="closePopNav()" class="x-span">X</span>
+                <ul>
+                    <li><a href="board.html">BOARD</a></li>
+                    <li><a href="backlog.html">BACKLOG</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                </ul>
+            </div>
+        </div>
 
         <div w3-include-html="navbar.html" class="navbar-wrapper"></div>
 
