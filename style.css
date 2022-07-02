@@ -4,6 +4,11 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+
+.d-none {
+    display: none;
+}
+
 .main {
     display: flex;
     height: 100vh;
@@ -17,8 +22,19 @@
     font-size: 20px;
 }
 
+/* NAVAR MOBIL --------------------*/ 
+.navbar-mobil {
+    height: 70px;
+    background-color: #071ca1;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+}
+
 .navbar-wrapper {
     width: 13%;
+    display: none; 
 }
 
 .navbarLeft {
@@ -80,6 +96,8 @@ ul {
 
 .content {
     width: 80%;
+    margin-left: 50px;
+    margin-top: 45px;
 }
 
 
@@ -108,6 +126,16 @@ h3 {
 
 /* Add Task Style ---------------------*/
 
+.firstRow {
+    padding-top: 25px;
+}
+
+.button-no-default-style {
+    border: none; 
+    background-color: transparent; 
+
+}
+
 h2 {
     font-weight: 600px;
     margin-top: 50px;
@@ -120,15 +148,11 @@ h2 {
 }
 
 .addTaskBox {
-    height: 65%;
-    width: 95%;
+    height: 400px;
     max-width: 700px;
     background-color: rgb(244, 243, 251);
     margin-top: 30px;
     border-radius: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .flex {
@@ -137,7 +161,7 @@ h2 {
 
 .width50 {
     width: 50%;
-    height: 150px;
+    height: 115px;
 }
 
 .marginLeft {
@@ -156,7 +180,7 @@ select {
 
 textarea {
     width: 260px !important;
-    height: 100px;
+    height: 75px;
 }
 
 .assignedTo {
@@ -179,16 +203,15 @@ textarea {
 .assignedToRow2 {
     display: flex;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 1rem;
     padding-right: 70px;
     align-items: center;
-    padding-top: 10px;
 }
 
 .createTask {
     background-color: rgb(30 49 144);
     color: white;
-    height: 40px;
+    height: 35px;
     width: 100px;
     border-radius: 8px;
     border: none;
@@ -289,14 +312,15 @@ textarea {
     margin-top: 0px !important;
     background-color: rgb(244, 243, 251);
     border-radius: 3%;
-    padding: 10px;
-    margin: 8px;
+    padding: 10px 0;
+    margin: 8px 0;
     color: rgb(77, 76, 76);
 }
 
 .width30 {
     width: 30%;
     display: flex;
+    padding-left: 10px;
 }
 
 .width20 {
@@ -358,4 +382,19 @@ body {
     background-color: rgb(98, 98, 32);
     margin: 20px;
     margin-top: 20px!important;
+}
+
+@media (min-width: 886px) {
+    .navbar-wrapper {
+        width: 13%;
+        display: block; 
+    }
+
+    .navbar-mobil {
+        display: none;
+    }
+
+    .content {
+        margin-top: 0;
+    }
 }
