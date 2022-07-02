@@ -32,3 +32,13 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
+
+/** NAV BAR MOBIL  */
+
+function showNavMobil() {
+    document.getElementById('pop-nav').classList.remove('d-none');
+}
+
+function closePopNav() {
+    document.getElementById('pop-nav').classList.add('d-none');
+}
