@@ -110,7 +110,7 @@ ul {
 
 .grey-container {
     background-color: rgb(244 243 251);
-    width: 280px;
+    width: 175px;
     height: 600px;
     margin: 20px;
 }
@@ -377,11 +377,10 @@ body {
 }
 
 .drop-element {
-    height: 170px;
-    width: 250px;
+    height: 140px;
+    width: 140px;
     background-color: rgb(98, 98, 32);
-    margin: 20px;
-    margin-top: 20px!important;
+    margin: 15px 15px;
 }
 
 @media (min-width: 886px) {
