@@ -6,7 +6,7 @@
 
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 .main {
@@ -23,18 +23,50 @@
 }
 
 /* NAVAR MOBIL --------------------*/ 
+
+.x-span {
+    position: absolute; 
+    top: 0px;
+    right: 11px;
+    cursor: pointer;
+}
+
+.pop-nav {
+    padding: 60px 26px;
+    position: absolute;
+    background-color: rgba(30, 49, 144, 0.9);
+    width: 331px;
+    top: 14px;
+    right: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    flex-direction: column; 
+}
 .navbar-mobil {
-    height: 70px;
+    height: 55px;
     background-color: #071ca1;
     position: absolute;
     top: 0; 
     left: 0;
     right: 0; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navbar-wrapper {
     width: 13%;
     display: none; 
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    padding: 8px 8px;
+    cursor: pointer;
 }
 
 .navbarLeft {
@@ -97,7 +129,7 @@ ul {
 .content {
     width: 80%;
     margin-left: 50px;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 
 

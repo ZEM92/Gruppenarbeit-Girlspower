@@ -19,12 +19,10 @@ function cancel() {
     document.getElementById('text').value = ``;
 }
 
-function addTask() {
-    document.getElementById(' addProfilePicture').value = ``;
-    document.getElementById('title').value = ``;
-    document.getElementById('category').value = ``;
-    document.getElementById('urgency').value = ``;
-    document.getElementById('text').value = ``;
-    document.getElementById('dueDate').value = ``;
+ function showNavMobil() {
+    document.getElementById('pop-nav').classList.remove('d-none');
+}
 
+function closePopNav() {
+    document.getElementById('pop-nav').classList.add('d-none');
 }
