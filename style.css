@@ -37,6 +37,7 @@
     background-color: rgba(30, 49, 144, 0.9);
     width: 100%;
     top: 14px;
+    right: 0; 
     color: white;
     display: flex;
     justify-content: center;
@@ -51,16 +52,23 @@
 
 
 .navbar-mobil {
-    height: 55px;
+    height: fit-content;
     background-color: #071ca1;
     position: absolute;
     top: 0; 
     left: 0;
     right: 0; 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 } 
+
+.logo-navM {
+    height: 45px;
+    width: 45px;
+    padding: 15px 15px; 
+    cursor: pointer; 
+}
 
 .navbar-wrapper {
     width: 13%;
