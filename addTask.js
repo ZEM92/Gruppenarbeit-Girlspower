@@ -1,6 +1,5 @@
 let task = [];
 let newTask; 
-let i = 0; 
 
 async function addTask() {
 
@@ -11,15 +10,14 @@ async function addTask() {
    let text = document.getElementById('text'); 
 
    newTask = {
-      'id' : i,
+      'id' : new Date().valueOf(),
       'title' : title.value,
       'dueDate' : dueDate.value,
       'urgeny' : urgency.vaule,
       'text' : text.value,
    }
 
-   task.push(newTask)
-   i++;
+   task.push(newTask);
    let allTasksAsString = JSON.stringify(task)
    await backend.setItem('task', allTasksAsString);
    console.log(task)

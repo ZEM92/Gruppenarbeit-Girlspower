@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="./mini_backend.js"></script>
     <script language="javascript" type="text/javascript" src="script.js"></script>
+    <script language="javascript" type="text/javascript" src="addTask.js"></script>
+    <script language="javascript" type="text/javascript" src="backlog.js"></script>
 </head>
 
-<body onload="init()">
+<body onload="init() ; initBackend()">
 
     <div class="main">
         <div class="navbar-mobil">
@@ -40,52 +42,24 @@
                 <div class="width50bl h2 blueText"><b>DETAILS</b></div>
             </div>
 
-            <div class="backlogCard">
-                <div class="backlogCardAvatar width30">
-                    <img src="Profilpicture/profilepicture1.png" class="assignedTo">
-                    <div class="assignedToText">
-                    <span class="namebacklog">Dagobert</span> <br>
-                    <span class="emailbacklog">Dagoberts E-Mail</span></div>
-
+            <div class="backlogCard-wrapper" id="backlogCardWrapper">
+                <div class="backlogCard">
+                    <div class="backlogCardAvatar width30">
+                        <img src="Profilpicture/profilepicture2.png" class="assignedTo">
+                        <div class="assignedToText">
+                        <span class="namebacklog">Britney </span> <br>
+                        <span class="emailbacklog">Britneys E-Mail</span></div>
+                    </div>
+                    <div class="backlogCardCategory width20">
+                        <span>Skandal </span>
+                    </div>
+                    <div class="backlogCardDetails width50bl">
+                        <span>Aufgabe</span>                    
+                    </div>
                 </div>
-
-                <div class="backlogCardCategory width20">
-                    <span>Finanzen </span>
-                    
-                </div>
-
-                
-                <div class="backlogCardDetails width50bl">
-                    <span>Geld zählen</span>
-                    
-                </div>
-
-            </div>
-            <div class="backlogCard">
-                <div class="backlogCardAvatar width30">
-                    <img src="Profilpicture/profilepicture2.png" class="assignedTo">
-                    <div class="assignedToText">
-                    <span class="namebacklog">Britney </span> <br>
-                    <span class="emailbacklog">Britneys E-Mail</span></div>
-
-                </div>
-
-                <div class="backlogCardCategory width20">
-                    <span>Skandal </span>
-                    
-                </div>
-
-                
-                <div class="backlogCardDetails width50bl">
-                    <span>Aufgabe</span>                    
-                </div>
-
             </div>
             
-
-
         </div>
-
     </div>
 
     
