@@ -5,16 +5,21 @@ async function addTask() {
 
    let title = document.getElementById('title');
    let dueDate = document.getElementById('dueDate');
-   let category = document.getElementById('category'); 
+   let category = document.getElementById('category');
+   let valueCategory = category.options[category.selectedIndex].value; 
    let urgency = document.getElementById('urgency'); 
+   let valueUrgency = urgency.options[urgency.selectedIndex].value;
+   console.log(valueCategory, valueUrgency)
    let text = document.getElementById('text'); 
 
    newTask = {
       'id' : new Date().valueOf(),
       'title' : title.value,
       'dueDate' : dueDate.value,
-      'urgeny' : urgency.vaule,
+      'category' : valueCategory,
+      'urgency' : valueUrgency,
       'text' : text.value,
+      'category' : "todo"
    }
 
    task.push(newTask);
@@ -37,8 +42,7 @@ function cancel() {
    document.getElementById('text').value = ``; 
 }
 
-function deleteUser(name) {
-   backend.deleteItem('users');
- }
+
+
 
 
