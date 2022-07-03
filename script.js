@@ -1,6 +1,13 @@
-//* TEMPLATE  */
+//* BACKEND */ -----------------------------------------------------------------------------------------------------
+
+//* TEMPLATE ----------------------------------------------------------------------------------------------------- */
 async function init() {
     await includeHTML();
+}
+
+async function initBackend() { //ruft die Daten aus dem Backend auf
+    await downloadFromServer();
+    task = JSON.parse(backend.getItem('task')) || [];
 }
 
 async function includeHTML() {
@@ -17,7 +24,7 @@ async function includeHTML() {
     }
 }
 
-/** DRAG & DROP  */
+/** DRAG & DROP ----------------------------------------------------------------------------------------------------- */
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -33,7 +40,7 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
 }
 
-/** NAV BAR MOBIL  */
+/** NAV BAR MOBIL ------------------------------------------------------------------------------------------------------ */
 
 function showNavMobil() {
     document.getElementById('pop-nav').classList.remove('d-none');
@@ -42,3 +49,6 @@ function showNavMobil() {
 function closePopNav() {
     document.getElementById('pop-nav').classList.add('d-none');
 }
+
+
+
