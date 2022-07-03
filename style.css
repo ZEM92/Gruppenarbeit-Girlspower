@@ -168,6 +168,8 @@ ul {
     height: 600px;
     margin: 20px;
     border-radius: 10px;
+} @media (min-width: 1012px) {
+    
 }
 
 h3 {
