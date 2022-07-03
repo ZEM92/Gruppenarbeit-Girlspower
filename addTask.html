@@ -36,7 +36,7 @@
             <h2>Add Task</h2>
             <span class="blueText">Learning Management System Project</span>
 
-            <form action="backlog.html">
+            <form action="backlog.html" id="form">
 
                 <div class="addTaskBox">
                     <div class="firstRow flexAddTask">
@@ -64,9 +64,9 @@
                         <div class="width50">
                             <h4 class="blueText">URGENCY</h4>
                             <select id="urgency" required>
-                                <option>High</option>
-                                <option value="">Medium</option>
-                                <option value="">Low</option>
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Low">Low</option>
                             </select>
                         </div>
                     </div>
@@ -75,8 +75,7 @@
                     <div class="thirdRow flexAddTask">
                         <div class="width50 marginLeft">
                             <h4 class="blueText">DESCRIPTION</h4>
-                            <textarea id="text" required>Describe your task..
-                            </textarea>
+                            <textarea id="text" required>Describe your task..</textarea>
                         </div>
 
                         <div class="width50">
@@ -90,9 +89,11 @@
                             <div class="assignedToRow2">
 
                                 <button type="reset" class="button-no-default-style"><img src="img/trash.png" alt="" class="cancelbutton"></button>
-                                <button type="submit" class="createTask" onclick="addTask()">CREATE TASK</button>
+                                <button type="submit" class="createTask" onclick="addTask()" id="create-task">CREATE TASK</button>
                                 
                             </div>
+
+                        
                         </div>
                     </div>
                 </div>

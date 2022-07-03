@@ -295,13 +295,14 @@ textarea {
 }
 
 .createTask {
-    display: none;
+    display: block;
     background-color: rgb(30 49 144);
     color: white;
     height: 35px;
     width: 100px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 .cancelbutton {

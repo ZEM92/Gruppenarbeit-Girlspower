@@ -1,6 +1,7 @@
 let task = [];
 let newTask; 
 
+
 async function addTask() {
 
    let title = document.getElementById('title');
@@ -28,11 +29,6 @@ async function addTask() {
    console.log(task)
    cancel(); 
 }
-
-/*async function initBackend() {
-   await downloadFromServer();
-   task = JSON.parse(backend.getItem('task')) || [];
-}*/
 
 function cancel() {
    document.getElementById('title').value = ``;
