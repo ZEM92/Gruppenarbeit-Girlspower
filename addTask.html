@@ -38,7 +38,7 @@
             <form action="backlog.html">
 
                 <div class="addTaskBox">
-                    <div class="firstRow flex">
+                    <div class="firstRow flexAddTask">
                         <div class="width50 marginLeft">
                             <h4 class="blueText">TITLE</h4>
                             <input id="title" placeholder="Title">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
 
-                    <div class="secondRow flex">
+                    <div class="secondRow flexAddTask">
                         <div class="width50 marginLeft">
                             <h4 class="blueText">CATEGORY</h4>
                             <select id="category">
@@ -71,7 +71,7 @@
                     </div>
 
 
-                    <div class="thirdRow flex">
+                    <div class="thirdRow flexAddTask">
                         <div class="width50 marginLeft">
                             <h4 class="blueText">DESCRIPTION</h4>
                             <textarea id="text">Describe your task..
@@ -90,6 +90,7 @@
 
                                 <button type="reset" class="button-no-default-style"><img src="img/trash.png" alt="" class="cancelbutton"></button>
                                 <button type="submit" class="createTask" onclick="addTask()">CREATE TASK</button>
+                                <img src="img/plus.png" class="plus-icon" alt="" onclick="addTask()">
                             </div>
                         </div>
                     </div>

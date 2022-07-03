@@ -94,7 +94,7 @@ li a {
 
 li {
     list-style: none;
-    padding: 8px; 
+    padding: 20px; 
 } @media(min-width: 600px) {
     li {
         padding: 30px;
@@ -172,8 +172,19 @@ h3 {
 
 /* Add Task Style ---------------------*/
 
+.plus-icon {
+    width: 50px;
+    height: 50px; 
+    cursor: pointer; 
+    cursor: pointer;
+    
+} .plus-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .firstRow {
-    padding-top: 25px;
+    padding-top: 5px;
 }
 
 .button-no-default-style {
@@ -190,7 +201,7 @@ h2 {
 
 .blueText {
     color: #071ca1;
-    padding-bottom: 10px;
+    padding: 4px 0;
 }
 
 .addTaskBox {
@@ -204,34 +215,49 @@ h2 {
 .flex {
     display: flex;
 }
+.flexAddTask {
+    display: block;
+}
 
 .width50 {
-    width: 50%;
-    height: 115px;
+    width: 100%;
+    height: max-content;
+}
+
+h4 {
+    font-size: 0.8rem; 
+    margin: 0 8px;
+}
+
+.thirdRow {
+    position: relative;
 }
 
 .marginLeft {
-    margin-left: 45px;
-}
+    margin-left: 0;
+} 
 
 input {
-    height: 50px;
-    width: 260px;
+    height: 25px;
+    width: 90%;
+    margin: 0 8px;
 }
 
 select {
-    width: 260px;
-    height: 54px;
+    width: 90%;
+    margin: 0 8px;
+    height: 29px;
 }
 
 textarea {
-    width: 260px !important;
-    height: 75px;
+    width: 90%;
+    margin: 0 8px;
+    height: 45px;
 }
 
 .assignedTo {
-    height: 53px;
-    width: 53px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     object-fit: cover;
 }
@@ -244,17 +270,21 @@ textarea {
 .assignedToRow {
     display: flex;
     align-items: center;
+    margin-left: 8px;
 }
 
 .assignedToRow2 {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    padding-right: 70px;
     align-items: center;
+    position: absolute;
+    right: 28px;
+    bottom: 2px;
 }
 
 .createTask {
+    display: none;
     background-color: rgb(30 49 144);
     color: white;
     height: 35px;
@@ -466,5 +496,50 @@ body {
 
     .content {
         margin-top: 0;
+    }
+}
+
+@media (min-width: 740px) {
+    .marginLeft {
+        margin-left: 45px;
+    }
+    .flexAddTask {
+        display: flex; 
+    }
+    .width50 {
+        width: 50%; 
+        height: 115px; 
+    }
+    input {
+        max-width: 260px;
+        height: 45px !important;
+        box-sizing: border-box;
+    }
+    select {
+        max-width: 260px;
+        height: 45px !important; 
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 260px !important;
+        height: 75px !important;
+        box-sizing: border-box;
+    }
+    .firstRow {
+        padding-top: 25px; 
+    }
+    .blueText {
+        color: #071ca1;
+        padding-bottom: 10px;
+    }
+    .assignedTo {
+        height: 53px !important;
+        width: 53px !important;
+    }
+    .createTask {
+        display: block; 
+    }
+    .plus-icon {
+        display: none;
     }
 }
