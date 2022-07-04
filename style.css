@@ -9,6 +9,15 @@
     display: none !important;
 }
 
+.h3-not-center{
+    text-align: left;
+    font-size: 14px;    
+}
+
+.card-span {
+    font-size: 13px;
+}
+
 .main {
     display: flex;
     height: 100vh;
@@ -162,12 +171,27 @@ ul {
     justify-content: space-evenly;
 }
 
+.wrapper-card-elements{
+    padding: 12px 12px;
+}
+.boardImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    object-fit: cover;
+    padding: 4px 4px;   
+}
+
 .grey-container {
     background-color: rgb(244 243 251);
     width: 175px;
     height: 600px;
     margin: 20px;
     border-radius: 10px;
+    overflow-y: overlay;
 } @media (min-width: 1012px) {
     
 }
@@ -490,13 +514,13 @@ body {
 }
 
 .drop-element {
-    height: 140px;
     width: 140px;
     background-color: hsl(242deg 27% 94%);
     margin: 15px 15px;
     border-radius: 5px;
     box-shadow: 10px 20px 15px silver;
 	border-radius: 20px;
+    position: relative;     
 }
 
 @media (min-width: 886px) {

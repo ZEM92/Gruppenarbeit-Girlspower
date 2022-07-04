@@ -20,7 +20,7 @@ async function addTask() {
       'category' : valueCategory,
       'urgency' : valueUrgency,
       'text' : text.value,
-      'progress' : "todo"
+      'status' : "todo"
    }
 
    task.push(newTask);

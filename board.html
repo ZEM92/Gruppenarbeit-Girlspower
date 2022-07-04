@@ -11,10 +11,11 @@
     <script language="javascript" type="text/javascript" src="script.js"></script>
     <script language="javascript" type="text/javascript" src="addTask.js"></script>
     <script src="./mini_backend.js"></script>
+    <script src="board.js"></script>
 </head>
 
 
-<body onload="init() ; initBackend()">
+<body onload="init() ; initBackend() ; initBoard()">
 
     <div class="main">
         <div class="navbar-mobil">
@@ -38,15 +39,9 @@
                 <div class="column">
                     <h3>TO DO</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)" id="toDo">
 
-                            <div class="drop-element" id="1" draggable="true" ondragstart="drag(event)">
-                                <img class="assignedTo" src="Profilpicture/profilepicture1.png">
-                                <h3>Title</h3>
-                                <span>Category</span><br>
-                                <span>DueDate</span>
-                            </div>
-                            <div class="drop-element" id="2" draggable="true" ondragstart="drag(event)"></div>
+                            
                         </div>
 
                     </div>
@@ -55,19 +50,19 @@
                 <div class="column">
                     <h3>IN PROGRESS</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div class="grey-container" ondrop="drop('inProgress')" ondragover="allowDrop(event)" id="inProgress"></div>
                     </div>
                 </div>
                 <div class="column">
                     <h3>TESTING</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div class="grey-container" ondrop="drop('testing')" ondragover="allowDrop(event)" id="testing"></div>
                     </div>
                 </div>
                 <div class="column">
                     <h3>DONE</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div class="grey-container" ondrop="drop('done')" ondragover="allowDrop(event)" id="done"></div>
                     </div>
                 </div>
             </div>

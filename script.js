@@ -1,5 +1,5 @@
 //* BACKEND */ -----------------------------------------------------------------------------------------------------
-
+let currentDraggedElement; 
 //* TEMPLATE ----------------------------------------------------------------------------------------------------- */
 async function init() {
     await includeHTML();
@@ -30,14 +30,14 @@ function allowDrop(ev) {
     ev.preventDefault();
 }
 
-function drag(ev) {
+function drag(id) {
     ev.dataTransfer.setData("text", ev.target.id);
+    let currentDragged
 }
-
 function drop(ev) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+    
+
 }
 
 /** NAV BAR MOBIL ------------------------------------------------------------------------------------------------------ */
