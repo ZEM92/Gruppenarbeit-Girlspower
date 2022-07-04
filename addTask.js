@@ -1,4 +1,4 @@
-let task = [];
+let task = {};
 let newTask; 
 
 
