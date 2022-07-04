@@ -1,3 +1,11 @@
+
+function initBacklog() {
+    setTimeout(() => {
+        renderBacklog();
+    }, 300)    
+}
+
+
 function renderBacklog() {
     let backlog = document.getElementById('backlogCardWrapper');
 
