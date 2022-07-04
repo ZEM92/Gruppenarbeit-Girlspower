@@ -518,7 +518,7 @@ body {
     background-color: hsl(242deg 27% 94%);
     margin: 15px 15px;
     border-radius: 5px;
-    box-shadow: 10px 20px 15px silver;
+    box-shadow: 10px 20px 15px rgba(192, 192, 192, 0.604);
 	border-radius: 20px;
     position: relative;   
     cursor: move;  
