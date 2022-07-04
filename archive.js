@@ -1,12 +1,11 @@
-
-function initBacklog() {
+function initArchive() {
     setTimeout(() => {
-        renderBacklog();
+        renderArchive();
     }, 300)    
 }
 
-function renderBacklog() {
-    let backlog = document.getElementById('backlogCardWrapper');
+function renderArchive() {
+    let backlog = document.getElementById('archiveBox');
 
     for (let i = 0; i < task.length; i++) {
         const element = task[i];
@@ -18,7 +17,7 @@ function renderBacklog() {
         console.log(title , dueDate , category , urgency)
         
         backlog.innerHTML += `
-        <div class="backlogCard">
+        <div class="archiveCard">
         <div class="backlogCardAvatar width30">
             <img src="Profilpicture/profilepicture2.png" class="assignedTo">
             <div class="assignedToText">

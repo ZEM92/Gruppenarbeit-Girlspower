@@ -25,8 +25,8 @@ async function includeHTML() {
 }
 
 /** DRAG & DROP ----------------------------------------------------------------------------------------------------- */
-function allowDrop(ev) {
-    ev.preventDefault();
+function allowDrop(event) {
+    event.preventDefault();
 }
 
 function startDragging(id) {
@@ -37,8 +37,9 @@ function moveTo(category) {
     let element = task.find(ticket => ticket.id == currentDraggedElement);
     element['status'] = category; 
     backend.setItem('task' , JSON.stringify(task));
-    updateBoard();
-    console.log(element)
+    filterAll();
+    //updateBoard();
+   // console.log(element)
 }
 
 /** NAV BAR MOBIL ------------------------------------------------------------------------------------------------------ */
