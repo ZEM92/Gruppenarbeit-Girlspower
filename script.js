@@ -31,7 +31,7 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
+  currentDraggedElement = id; 
 }
 
 function drop(ev) {

@@ -15,13 +15,12 @@ function renderBoard() {
         let dueDate = element.dueDate; 
         let category = element.category; 
         let urgency = element.urgency; 
-        let variable = element.id;
-        let variableToStink =  variableToStink.toString();
+        let num = element.id;
         
-        console.log(title , dueDate , category , urgency , variableToStink )
+        console.log(title , dueDate , category , urgency , num )
         
         toDo.innerHTML += `
-        <div class="drop-element" id="1" draggable="true" ondragstart="drag(event)">
+        <div class="drop-element" id="${num}" draggable="true" ondragstart="drag(${num})">
         <img class="boardImg" src="Profilpicture/profilepicture1.png">
         <div class="wrapper-card-elements">
             <h3 class="h3-not-center">${title}</h3>
