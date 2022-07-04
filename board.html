@@ -39,7 +39,7 @@
                 <div class="column">
                     <h3>TO DO</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop(event)" ondragover="allowDrop(event)" id="toDo">
+                        <div class="grey-container" ondrop="moveTo('toDo')" ondragover="allowDrop(event)" id="toDo">
 
                             
                         </div>
@@ -50,19 +50,19 @@
                 <div class="column">
                     <h3>IN PROGRESS</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop('inProgress')" ondragover="allowDrop(event)" id="inProgress"></div>
+                        <div class="grey-container" ondragover="allowDrop(event)" ondrop="moveTo('inProgress')"  id="inProgress"></div>
                     </div>
                 </div>
                 <div class="column">
                     <h3>TESTING</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop('testing')" ondragover="allowDrop(event)" id="testing"></div>
+                        <div class="grey-container" ondrop="moveTo('testing')" ondragover="allowDrop(event)" id="testing"></div>
                     </div>
                 </div>
                 <div class="column">
                     <h3>DONE</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="drop('done')" ondragover="allowDrop(event)" id="done"></div>
+                        <div class="grey-container" ondrop="moveTo('done')" ondragover="allowDrop(event)" id="done"></div>
                     </div>
                 </div>
             </div>

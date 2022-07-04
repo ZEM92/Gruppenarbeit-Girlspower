@@ -25,20 +25,20 @@ async function includeHTML() {
 }
 
 /** DRAG & DROP ----------------------------------------------------------------------------------------------------- */
-
 function allowDrop(ev) {
     ev.preventDefault();
 }
 
-function drag(ev) {
+function startDragging(id) {
   currentDraggedElement = id; 
 }
 
-function drop(ev) {
-    ev.preventDefault();
-    let currentDraggedElement = task.find(ticket => ticket.id == currentDraggedElement);
-    currentDraggedElement['status'] = ev; 
+function moveTo(category) {
+    let element = task.find(ticket => ticket.id == currentDraggedElement);
+    element['status'] = category; 
     backend.setItem('task' , JSON.stringify(task));
+    updateBoard();
+    console.log(element)
 }
 
 /** NAV BAR MOBIL ------------------------------------------------------------------------------------------------------ */

@@ -4,7 +4,6 @@ function initBoard() {
     }, 300)    
 }
 
-
 function renderBoard() {
     let toDo = document.getElementById('toDo');
 
@@ -20,7 +19,7 @@ function renderBoard() {
         console.log(title , dueDate , category , urgency , num )
         
         toDo.innerHTML += `
-        <div class="drop-element" id="${num}" draggable="true" ondragstart="drag(${num})">
+        <div class="drop-element" id="${num}" draggable="true" ondragstart="startDragging(${num})">
         <img class="boardImg" src="Profilpicture/profilepicture1.png">
         <div class="wrapper-card-elements">
             <h3 class="h3-not-center">${title}</h3>
@@ -32,10 +31,27 @@ function renderBoard() {
     }   
 }
 
-function filterByCategory() {
-    var inProgress = task.filter(function(job) {
-        return job.status == "todo"; 
-    });
-    console.log(inProgress)
+function initUpdateBoard() {
+    setTimeout(() => {
+        updateBoard();
+    }, 300)    
 }
 
+function updateBoard() {
+    let progressTasks = task.filter( t => t['status'] == `inProgress`); 
+    let inProgressHTML = document.getElementById('inProgess');
+    inProgressHTML += generateHTML(progressTasks);
+}
+
+function generateHTML(element) {
+    return `
+    <div class="drop-element" id="${element.id}" draggable="true" ondragstart="startDragging(${element.id})">
+    <img class="boardImg" src="Profilpicture/profilepicture1.png">
+    <div class="wrapper-card-elements">
+        <h3 class="h3-not-center">${element.title}</h3>
+        <span class="card-span">${element.category}</span><br>
+        <span class="card-span">${element.dueDate}</span>
+    </div>
+</div>
+    `
+}
