@@ -30,14 +30,15 @@ function allowDrop(ev) {
     ev.preventDefault();
 }
 
-function drag(id) {
+function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
-    let currentDragged
 }
+
 function drop(ev) {
     ev.preventDefault();
-    
-
+    let currentDraggedElement = task.find(ticket => ticket.id == currentDraggedElement);
+    currentDraggedElement['status'] = ev; 
+    backend.setItem('task' , JSON.stringify(task));
 }
 
 /** NAV BAR MOBIL ------------------------------------------------------------------------------------------------------ */

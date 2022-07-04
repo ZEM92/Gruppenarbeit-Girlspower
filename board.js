@@ -15,7 +15,10 @@ function renderBoard() {
         let dueDate = element.dueDate; 
         let category = element.category; 
         let urgency = element.urgency; 
-        console.log(title , dueDate , category , urgency)
+        let variable = element.id;
+        let variableToStink =  variableToStink.toString();
+        
+        console.log(title , dueDate , category , urgency , variableToStink )
         
         toDo.innerHTML += `
         <div class="drop-element" id="1" draggable="true" ondragstart="drag(event)">
