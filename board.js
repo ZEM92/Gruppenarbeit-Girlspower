@@ -16,7 +16,7 @@ function clearAllGreyContainer() {
 function filterAll() {
     clearAllGreyContainer()
     //filter nach todo
-    let todoTasks = task.filter( t => t['status'] == `toDo`);
+    let todoTasks = task.filter( t => t['status'] == `todo`);
     for (let i = 0; i < todoTasks.length; i++) {
         const element = todoTasks[i];
         document.getElementById('toDo').innerHTML += generateHTML(element);
@@ -53,8 +53,8 @@ function generateHTML(element) {
     `
 }
 
-//alte renderBoard die glaube ich nicht mehr gebraucht wird
-/*function renderBoard() {
+
+function renderBoard() {
     let toDo = document.getElementById('toDo');
 
     for (let i = 0; i < task.length; i++) {
@@ -78,7 +78,7 @@ function generateHTML(element) {
     </div>
     `;
     }   
-} */
+} 
 
 
 
