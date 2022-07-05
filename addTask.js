@@ -20,13 +20,14 @@ async function addTask() {
       'category' : valueCategory,
       'urgency' : valueUrgency,
       'text' : text.value,
-      'status' : "todo"
+      'status' : "toDo"
    }
 
    task.push(newTask);
+   initFilter();
    let allTasksAsString = JSON.stringify(task)
    await backend.setItem('task', allTasksAsString);
-   console.log(task)
+   //console.log(task)
    cancel(); 
 }
 

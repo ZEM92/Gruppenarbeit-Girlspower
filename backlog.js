@@ -1,4 +1,3 @@
-
 function initBacklog() {
     setTimeout(() => {
         renderBacklog();
@@ -12,10 +11,7 @@ function renderBacklog() {
         const element = task[i];
 
         let title = element.title; 
-        let dueDate = element.dueDate; 
         let category = element.category; 
-        let urgency = element.urgency; 
-        console.log(title , dueDate , category , urgency)
         
         backlog.innerHTML += `
         <div class="backlogCard">
@@ -31,6 +27,9 @@ function renderBacklog() {
         <div class="backlogCardDetails width50bl">
             <span>${title}</span>                    
         </div>
+        <div>
+            <img src="img/trash.png" onclick="deleteTask(${element.id})" class="delete-task-backlog">
+        <div>
     </div>  
     `;
 

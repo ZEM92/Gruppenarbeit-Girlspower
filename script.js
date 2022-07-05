@@ -33,13 +33,12 @@ function startDragging(id) {
   currentDraggedElement = id; 
 }
 
-function moveTo(category) {
+async function moveTo(category) {
     let element = task.find(ticket => ticket.id == currentDraggedElement);
     element['status'] = category; 
     backend.setItem('task' , JSON.stringify(task));
+
     filterAll();
-    //updateBoard();
-   // console.log(element)
 }
 
 /** NAV BAR MOBIL ------------------------------------------------------------------------------------------------------ */

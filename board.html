@@ -8,7 +8,6 @@
     <title>Board</title>
     
     <link rel="stylesheet" href="style.css">
-    <link type="image/png" sizes="32x32" rel="icon" href="img/faviconKanban.png">
     <script language="javascript" type="text/javascript" src="script.js"></script>
     <script language="javascript" type="text/javascript" src="addTask.js"></script>
     <script src="./mini_backend.js"></script>
@@ -28,11 +27,12 @@
                     <li><a href="board.html">BOARD</a></li>
                     <li><a href="backlog.html">BACKLOG</a></li>
                     <li><a href="addTask.html">ADD TASK</a></li>
+                    <li><a href="archive.html">ARCHIVE</a></li>
                     <li><a href="help.html">HELP</a></li>
                 </ul>
             </div>
         </div>
-
+        
         <div w3-include-html="navbar.html" class="navbar-wrapper"></div>
 
         <div class="content">
@@ -40,18 +40,14 @@
                 <div class="column">
                     <h3>TO DO</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="moveTo('toDo')" ondragover="allowDrop(event)" id="toDo">
-
-                            
+                        <div class="grey-container" ondrop="moveTo('toDo')" ondragover="allowDrop(event)" id="toDo"> 
                         </div>
-
                     </div>
-
                 </div>
                 <div class="column">
                     <h3>IN PROGRESS</h3>
                     <div class="DragAndDrop">
-                        <div class="grey-container" ondrop="moveTo('inProgress')"  ondragover="allowDrop(event)" id="inProgress"></div>
+                        <div class="grey-container" ondragover="allowDrop(event)" ondrop="moveTo('inProgress')"  id="inProgress"></div>
                     </div>
                 </div>
                 <div class="column">
